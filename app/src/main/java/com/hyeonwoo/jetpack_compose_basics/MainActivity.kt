@@ -1,5 +1,6 @@
 package com.hyeonwoo.jetpack_compose_basics
 
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -121,7 +122,11 @@ private fun MyAppPreview() {
     }
 }
 
-@Preview(showBackground = true, widthDp = 320)
+@Preview(
+    showBackground = true,
+    widthDp = 320,
+    uiMode = UI_MODE_NIGHT_YES,
+    name = "Dark")
 @Composable
 fun DefaultPreview() {
     JetpackcomposebasicsTheme {
